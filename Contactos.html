@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <title> En Escala </title>
+
+</head>
+<link rel="icon" href="Iconos/Logo.png">
+<link href="Front.css" rel="stylesheet">
+
+<body>
+  <div id="header" style="padding-bottom: 30px;">
+    <ul class="nav">
+        <li><img src="Iconos/Logo.png" style="width:50px; height:50px;"></li>
+        <li><a href="En Escala (v3).html">En Escala</a> </li>
+        <li><a href="">Render's</a>
+            <ul>
+              <select id="country" name="country">
+                <option value="Cocina">Cocina</option>
+                <option value="Dormitorios">Dormitorios</option>
+                <option value="Sala de Estar">Sala de Estar</option>
+              </select>
+            </ul>
+        </li>
+        <li><a href="">Nuestra Historia</a>
+        </li>
+        <li><a href="">Contacto</a></li>
+    </ul>
+</div>
+
+<div class="window-notice" id="window-notice">
+  <div class="content">
+    
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="Nombre">Nombre:</label><br>
+    <input type="text" id="Nombre" name="Nombre" placeholder="Ej.: Pedro Gonzalez" style="width: 300px;">
+<br>
+    <label for="E-Mail">Correo Electronico (Obligatorio):</label><br>
+    <input type="text" id="E-Mail" name="E-Mail" placeholder="Ej.:pedrogonzalez@mail.com" required style="width: 300px;">
+    
+    <br>
+    <label for="subject">Asunto</label><br>
+    <textarea id="subject" name="subject" placeholder="Escriba aqui..." style="padding:5px;height:100px;width: 250px;"></textarea>
+    <br>
+    <a href="mailto:cdserra@alumnos.unsada.edu.ar" class="botonEnviar">Enviar</a>
+    <input type="reset" value="Borrar" class="botonBorrar">
+    <br>
+
+  </form>
+</div> 
+<p style="align-self:flex-end;">
+  <a href="https://es-la.facebook.com/" target="_blank"><img src="Iconos/FB.png" style="width:30px; height:30px;"></a>
+  <a href="https://www.instagram.com/" target="_blank"><img src="Iconos/Ig.png" target="_blank" style="width:30px; height:30px;"></a>
+  <a href="https://www.youtube.com/" target="_blank"><img src="Iconos/Yt2.png" style="width:30px; height:30px;"></a>
+  <a href="https://ar.linkedin.com/" target="_blank"><img src="Iconos/In.png" style="width:30px; height:30px;"></a>
+  <a href="https://web.whatsapp.com/" target="_blank"><img src="Iconos/Wp.png" style="width:30px; height:30px;"></a>
+  <a href="https://web.telegram.org/" target="_blank"><img src="Iconos/Tg.png" style="width:30px; height:30px;"></a>
+  </p>
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
