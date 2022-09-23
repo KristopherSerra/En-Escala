@@ -1,0 +1,270 @@
+body {
+    margin: 0px;
+    font-style: oblique;
+    font-family: 'Redemption';
+    font-size: large;
+    background-color: white;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    font-family:'Peasone';
+    height: auto;
+    justify-items: center;
+    font-style: normal;
+    border-spacing: 1500px;
+    color:rgb(167, 23, 23);
+    padding-top: 150px;
+}
+
+h2 {
+    
+    color:rgb(167, 23, 23);
+    align-content: center;
+    text-align: center;
+    font-family:'Peasone';
+    font-size: 30px;
+    font-style: normal;
+    width: 100%;
+    height: 250px;
+}
+
+/* Links*/
+a{
+    font-family: 'Peasone';
+    font-style: normal;
+    font-size: 50px;
+    text-decoration: blue;
+    color: inherit;
+	text-shadow: 6px 10px 10px rgb(0, 0, 0);
+}
+/*Cabecera*/
+#header { 
+    font-family: 'Peasone';
+    font-style: normal;
+    text-decoration: none;
+    color: solid;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.884);
+    width:100%;
+    z-index: 50;
+}
+/*Lista Desplegable*/
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+    
+}
+
+.nav li a {
+    font-size: 30px;
+    color:rgb(167, 23, 23);
+    text-decoration:none;
+    padding: 10px;
+    display:block;
+    
+}
+
+.nav li a:hover {
+    background-color: transparent;
+    font-family: 'Peasone';
+    font-style: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+	align-items: stretch;
+	position: relative;
+    
+}
+
+.nav li ul {
+    display:none;
+    position:relative;
+
+}
+
+.nav li:hover > ul {
+    display:inline-block;
+    position: fixed;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.507);
+    width:150px;
+    align-content: flex-start;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+/*Ventana Emergente*/
+.window-notice {
+    background: rgba(0, 0, 0, 0.336);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+.window-notice .content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+/*Boton Transparente*/
+.botonEnviar {
+  
+  border-radius: 5px;
+  background-color: rgb(2, 175, 10);
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 25px;
+  margin: 5px;
+  padding-top: 5px;
+  text-shadow: none;
+  text-align:center;
+  transition: all 0.8s;
+  width: 70px;
+}
+.botonEnviar span {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  transition: 0.5s;
+}
+.botonEnviar span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+  }
+.botonEnviar:hover span {
+    padding-right: 25px;
+    font-style: bold;
+}
+.botonEnviar:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.botonEnviar:hover {
+    background-color:green;
+    color: rgb(255, 255, 255);
+}    
+
+
+  /*Boton Borrar*/
+.botonBorrar {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    width: 70px;
+    height: 31px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+  
+.botonBorrar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    } 
+  
+.botonBorrar span:after {
+    position: absolute;
+    opacity: 10%;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.botonBorrar:hover span {
+      padding-right: 25px;
+      
+    }
+    
+.botonBorrar:hover {
+        background-color:  rgb(182, 7, 7);
+        color: white;
+   }    
+
+.botonBorrar:hover span:after {
+      opacity: 100;
+      right: 0;
+    }
+
+.imagenespaganas{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+form{
+    font-family: 'Afterglow-Regular';
+    font-style: normal;
+    padding-bottom: 5px;
+}
+
+
+/* Contenedor de Imagenes*/
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+    overflow-block: hidden;
+    
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.barrasSeparadoras{
+    color: solid;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    width: fit-content;    
+    z-index: 50;
+    }
