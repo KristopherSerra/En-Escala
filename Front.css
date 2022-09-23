@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-style: oblique;
-    font-family: 'Redemption';
+    font-family: 'News Cycle';
     font-size: large;
     background-color: white;
 }
@@ -9,7 +9,7 @@ body {
 h1 {
     align-items: center;
     text-align: center;
-    font-family:'Peasone';
+    font-family:'News Cycle';
     height: auto;
     justify-items: center;
     font-style: normal;
@@ -23,7 +23,7 @@ h2 {
     color:rgb(167, 23, 23);
     align-content: center;
     text-align: center;
-    font-family:'Peasone';
+    font-family:'News Cycle';
     font-size: 30px;
     font-style: normal;
     width: 100%;
@@ -32,7 +32,7 @@ h2 {
 
 /* Links*/
 a{
-    font-family: 'Peasone';
+    font-family: 'News Cycle';
     font-style: normal;
     font-size: 50px;
     text-decoration: blue;
@@ -41,7 +41,7 @@ a{
 }
 /*Cabecera*/
 #header { 
-    font-family: 'Peasone';
+    font-family: 'News Cycle';
     font-style: normal;
     text-decoration: none;
     color: solid;
@@ -71,7 +71,7 @@ ul, ol {
 
 .nav li a:hover {
     background-color: transparent;
-    font-family: 'Peasone';
+    font-family: 'News Cycle';
     font-style: bold;
     font-size: 30px;
     text-decoration: none;
@@ -131,22 +131,18 @@ ul, ol {
 
 /*Boton Transparente*/
 .botonEnviar {
-  
-  border-radius: 5px;
-  background-color: rgb(2, 175, 10);
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  height: 25px;
-  margin: 5px;
-  padding-top: 5px;
-  text-shadow: none;
-  text-align:center;
-  transition: all 0.8s;
-  width: 70px;
+    background-color:rgb(2, 175, 10);
+    border: none;
+	border-radius: 3px;
+    box-shadow: 1px 1px 4px #DADADA;
+    color: #fff;
+    font-family: News Cycle;
+    font-size: medium;
+    padding: 5px 15px 5px 15px;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 }
 .botonEnviar span {
   cursor: pointer;
@@ -177,22 +173,19 @@ ul, ol {
 
   /*Boton Borrar*/
 .botonBorrar {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: red;
+    background: red;
     border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-    width: 70px;
-    height: 31px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    }
+	border-radius: 3px;
+    box-shadow: 1px 1px 4px #DADADA;
+    color: #fff;
+    font-family: News Cycle;
+    font-size: medium;
+    padding: 5px 15px 5px 15px;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
   
 .botonBorrar span {
     cursor: pointer;
@@ -229,10 +222,13 @@ ul, ol {
     align-items: center;
 }
 
-form{
-    font-family: 'Afterglow-Regular';
+.formulario{
+    font-family: 'News Cycle';
     font-style: normal;
     padding-bottom: 5px;
+    display: block;
+    padding-top: 200px;
+    padding-left: 500px;
 }
 
 
@@ -268,3 +264,68 @@ form{
     width: fit-content;    
     z-index: 50;
     }
+
+
+/* Esto puede borrarse*/
+.form-style-2{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 18px News Cycle;
+    font-style: bold;
+}
+.form-style-2-heading{
+	font-weight: normal;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.form-style-2 label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form-style-2 span.required{
+	color:red;
+}
+.form-style-2 .tel-number-field{
+	width: 40px;
+	text-align: center;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field{
+	width: 48%;	
+}
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+ .form-style-2 .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+	border: 1px solid rgb(204, 0, 0);
+}
+.form-style-2 .textarea-field{
+	height:100px;
+	width: 55%;
+}
