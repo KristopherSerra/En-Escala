@@ -13,18 +13,16 @@ h1 {
     height: auto;
     justify-items: center;
     font-style: normal;
-    border-spacing: 1500px;
     color:rgb(167, 23, 23);
-    padding-top: 150px;
 }
 
 h2 {
-    
     color:rgb(167, 23, 23);
     align-content: center;
     text-align: center;
     font-family:'News Cycle';
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: lighter;
     font-style: normal;
     width: 100%;
     height: 250px;
@@ -37,48 +35,50 @@ a{
     font-size: 50px;
     text-decoration: blue;
     color: inherit;
-	text-shadow: 6px 10px 10px rgb(0, 0, 0);
+    height: 50px;
 }
 /*Cabecera*/
-#header { 
+#header {   
     font-family: 'News Cycle';
     font-style: normal;
+    font-weight: normal;
     text-decoration: none;
     color: solid;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.884);
-    width:100%;
-    z-index: 50;
-}
+    background-color: #292b2c !important;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display:flow-root;
+        
+    }
 /*Lista Desplegable*/
 ul, ol {
     list-style:none;
+    
 }
 
 .nav > li {
     float:left;
-    
+    align-items: center;
 }
 
 .nav li a {
-    font-size: 30px;
-    color:rgb(167, 23, 23);
+    font-size: 22px;
     text-decoration:none;
-    padding: 10px;
+    padding: 5px;
     display:block;
-    
+    color: whitesmoke;
 }
 
 .nav li a:hover {
-    background-color: transparent;
     font-family: 'News Cycle';
     font-style: bold;
-    font-size: 30px;
-    text-decoration: none;
-    color: inherit;
-	align-items: stretch;
-	position: relative;
-    
+    color:rgb(255, 0, 0);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
 }
 
 .nav li ul {
@@ -89,11 +89,9 @@ ul, ol {
 
 .nav li:hover > ul {
     display:inline-block;
-    position: fixed;
-    z-index: 50;
-    background-color: rgba(255, 255, 255, 0.507);
-    width:150px;
-    align-content: flex-start;
+    position:relative;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
 }
 
 .nav li ul li {
@@ -134,13 +132,10 @@ ul, ol {
     background-color:rgb(2, 175, 10);
     border: none;
 	border-radius: 3px;
-    box-shadow: 1px 1px 4px #DADADA;
     color: #fff;
     font-family: News Cycle;
     font-size: medium;
     padding: 5px 15px 5px 15px;
-	-moz-box-shadow: 1px 1px 4px #DADADA;
-	-webkit-box-shadow: 1px 1px 4px #DADADA;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 }
@@ -176,13 +171,10 @@ ul, ol {
     background: red;
     border: none;
 	border-radius: 3px;
-    box-shadow: 1px 1px 4px #DADADA;
     color: #fff;
     font-family: News Cycle;
     font-size: medium;
     padding: 5px 15px 5px 15px;
-	-moz-box-shadow: 1px 1px 4px #DADADA;
-	-webkit-box-shadow: 1px 1px 4px #DADADA;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 }
@@ -202,7 +194,7 @@ ul, ol {
     transition: 0.5s;
 }
 .botonBorrar:hover span {
-      padding-right: 25px;
+      padding-right: 0px;
       
     }
     
@@ -212,7 +204,7 @@ ul, ol {
    }    
 
 .botonBorrar:hover span:after {
-      opacity: 100;
+      opacity: 100%;
       right: 0;
     }
 
@@ -268,18 +260,18 @@ ul, ol {
 
 /* Esto puede borrarse*/
 .form-style-2{
-	max-width: 500px;
-	padding: 20px 12px 10px 20px;
+	max-width: 100%;
+	padding: 20px 12px 10px 40px;
 	font: 18px News Cycle;
+    color: #ddd;
     font-style: bold;
+    background-color: #292b2c;
 }
 .form-style-2-heading{
 	font-weight: normal;
 	font-style: italic;
 	border-bottom: 2px solid #ddd;
-	margin-bottom: 20px;
 	font-size: 15px;
-	padding-bottom: 3px;
 }
 .form-style-2 label{
 	display: block;
@@ -287,8 +279,8 @@ ul, ol {
 }
 .form-style-2 label > span{
 	width: 100px;
-	font-weight: bold;
-	float: left;
+	font-weight: normal;
+    float: left;
 	padding-top: 8px;
 	padding-right: 5px;
 }
