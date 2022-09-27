@@ -79,6 +79,7 @@ ul, ol {
     position: sticky;
     top: 0;
     z-index: 1030;
+    transition: 0.4s;
 }
 
 .nav li ul {
@@ -138,6 +139,10 @@ ul, ol {
     padding: 5px 15px 5px 15px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+    margin-left: 325px;
+    box-shadow: 1px 1px 4px #525252;
+	-moz-box-shadow: 1px 1px 4px #525252;
+	-webkit-box-shadow: 1px 1px 4px #525252;
 }
 .botonEnviar span {
   cursor: pointer;
@@ -177,6 +182,9 @@ ul, ol {
     padding: 5px 15px 5px 15px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+    box-shadow: 1px 1px 4px #525252;
+	-moz-box-shadow: 1px 1px 4px #525252;
+	-webkit-box-shadow: 1px 1px 4px #525252;
 }
   
 .botonBorrar span {
@@ -208,21 +216,6 @@ ul, ol {
       right: 0;
     }
 
-.imagenespaganas{
-    width: 100px;
-    height: 100px;
-    align-items: center;
-}
-
-.formulario{
-    font-family: 'News Cycle';
-    font-style: normal;
-    padding-bottom: 5px;
-    display: block;
-    padding-top: 200px;
-    padding-left: 500px;
-}
-
 
 /* Contenedor de Imagenes*/
 .contenedor-imagenes{
@@ -249,28 +242,19 @@ ul, ol {
     object-fit: cover;
 }
 
-.barrasSeparadoras{
-    color: solid;
-    position: relative;
-    background-color: rgb(255, 0, 0);
-    width: fit-content;    
-    z-index: 50;
-    }
 
-
-/* Esto puede borrarse*/
+/* Formulario*/
 .form-style-2{
-	max-width: 100%;
-	padding: 20px 12px 10px 40px;
-	font: 18px News Cycle;
+	max-width: 75%;
+    font: 18px News Cycle;
     color: #ddd;
     font-style: bold;
-    background-color: #292b2c;
+    background-color: #640c01;
 }
+
 .form-style-2-heading{
 	font-weight: normal;
 	font-style: italic;
-	border-bottom: 2px solid #ddd;
 	font-size: 15px;
 }
 .form-style-2 label{
@@ -281,21 +265,16 @@ ul, ol {
 	width: 100px;
 	font-weight: normal;
     float: left;
-	padding-top: 8px;
 	padding-right: 5px;
 }
 .form-style-2 span.required{
 	color:red;
 }
-.form-style-2 .tel-number-field{
-	width: 40px;
-	text-align: center;
-}
+
 .form-style-2 input.input-field, .form-style-2 .select-field{
-	width: 48%;	
+	width: 40%;	
 }
 .form-style-2 input.input-field, 
-.form-style-2 .tel-number-field, 
 .form-style-2 .textarea-field, 
  .form-style-2 .select-field{
 	box-sizing: border-box;
@@ -305,19 +284,49 @@ ul, ol {
 	box-shadow: 1px 1px 4px #EBEBEB;
 	-moz-box-shadow: 1px 1px 4px #EBEBEB;
 	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
-	border-radius: 3px;
+	border-radius: 2px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	padding: 7px;
-	outline: none;
+	outline:none;
 }
 .form-style-2 .input-field:focus, 
-.form-style-2 .tel-number-field:focus, 
 .form-style-2 .textarea-field:focus,  
 .form-style-2 .select-field:focus{
 	border: 1px solid rgb(204, 0, 0);
 }
 .form-style-2 .textarea-field{
 	height:100px;
-	width: 55%;
+	width: 40%;
 }
+
+h3{
+    font-family:'News Cycle';
+    font-weight: lighter;
+    font-size: 40px;
+    height: auto;
+    color:rgb(255, 255, 255);
+    padding-left: 60px;
+}
+
+h4{
+    padding-left: 25px;
+    font-family:'News Cycle';
+    font-size: 20px;
+    font-weight: lighter;
+    height: auto;
+    justify-items: center;
+    font-style: normal;
+    color:rgb(255, 255, 255);
+}
+
+
+.cambiaso {
+    width: 35px;
+    height: 35px;
+}
+
+.cambiaso:hover {
+        filter: grayscale(100%);
+        transition: 0.5s;
+   }    
