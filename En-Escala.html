@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport"content="width=device-widht">
     <title> Renderizados 3D - En Escala </title>
     <!-- Encabezado -->
     <div id="header">
         <ul class="nav">
-            <li><a href="#Info"><img src="Iconos/Logo.png" style="margin-bottom: -9px;" class="cambiaso">En Escala</a></li>
-            <li><a href="" style="margin-left: 400px;">Render's</a></li>
+            <li><a href="#Info"><img src="Iconos/Logo.png" style="margin-bottom: -9px;margin-right: 5px;" class="cambiaso">En Escala</a></li>
+            <li><a href="" style="margin-left: 350px;">Render's</a></li>
             <li><a href="#Info">Nosotros</a></li>
             <li><a href="#Contactos">Contacto</a></li>
-            <li><a href="https://es-la.facebook.com/" target=_blank><img src="Iconos/FB.png" style="margin-left: 325px;" class="cambiaso"></a></li>
+            <li><a href="https://es-la.facebook.com/" target=_blank><img src="Iconos/FB.png" style="margin-left: 300px;" class="cambiaso"></a></li>
             <li><a href="https://twitter.com/" target=_blank><img src="Iconos/Twt.png" class="cambiaso"></a></li>
             <li><a href="https://www.instagram.com/" target=_blank><img src="Iconos/Ig.png" class="cambiaso"></a></li>
             <li><a href="https://api.whatsapp.com/send?phone=5492325515273&text=Hola,%20me%20interesa%20contactarlos" target=_blank><img src="Iconos/Wp.png" class="cambiaso"></a></li>
+            <li><img src="Iconos/DarkVader.png" style="width: 30px;height: 30px;margin-top: 7px;filter: invert();">
+             <!--Switch-->
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" onclick="DarkVader()"></span>
+                </label>
+            </li>
         </ul>
     </div>
 </head>
 
+<script type="text/javascript"> 
+    function DarkVader() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("DarkVader"); 
+    } 
+  </script>
+
 <link rel="icon" href="Iconos/Logo.png">
 <link href="Front.css" rel="stylesheet">
+<link href="DarkVader.css" rel="stylesheet">
 
 
 <body>
+   
+
     <h1 style="text-align: left;padding-left: 100px;"  id="Info">¿Quienes somos?</h1>
     <h2 style="text-align: left;padding-left: 100px;">Somos un grupo de Diseñadores, Programadores, Desarrolladores y Dibujantes
         cuyo unico objetivo es:<br> LA EXCELENCIA.<br>
@@ -34,7 +52,7 @@
 <div class="galeria" style="margin-bottom: 0px;">
     <div class="contenedor-imagenes">
         
-        <hr style="width:100%;size:9px;color:red">
+        <hr>
         <div class="imagen" id="Dormitorio"><img src="Aula Dormitorio/1 (1).jpg"></div>
         <div class="imagen"><img src="Aula Dormitorio/1 (2).jpg"></div>
         
@@ -44,38 +62,38 @@
         
         <div class="imagen"><img src="Aula Dormitorio/1 (8).jpg"></div>
 
-        <hr style="width:100%;size:9px;color:red">
+        <hr>
 
         <div class="imagen" id="Cocina"><img src="Pato Azul/1 (1).png"></div>
         <div class="imagen"><img src="Pato Azul/1 (2).png"></div>
         <div class="imagen"><img src="Pato Azul/1 (3).png"></div>
 
-        <hr style="width:100%;size:9px;color:red">
+        <hr>
 
         <div class="imagen" id="Comedor"><img src="Estar Comedor/1 (1).png"></div>
         <div class="imagen"><img src="Estar Comedor/1 (2).png"></div>
         <div class="imagen"><img src="Estar Comedor/1 (4).png"></div>
         
-        <hr style="width:100%;size:9px;color:red">
+        <hr>
 
         <div class="imagen" id="Invitados"><img src="Habitacion de Invitados/1 (1).png"></div>
         <div class="imagen"><img src="Habitacion de Invitados/1 (2).png"></div>
         <div class="imagen"><img src="Habitacion de Invitados/1 (3).png"></div>
         
-        <hr style="width:100%;size:9px;color:red">
+        <hr>
 
         <div class="imagen" id="Imagenes_Sueltas"><img src="Imagenes Sueltas/1 (1).png"></div>
         <div class="imagen"><img src="Imagenes Sueltas/1 (2).png"></div>
         
         <div class="imagen"><img src="Imagenes Sueltas/1 (4).png"></div>
         
-        <hr style="width:100%;size:9px;color:red">
+        <hr>
     </div>
 </div>
 
 <div class="form-style-2" style="padding: 20px 0px 90px 450px;">
-    <h3>Contactate con Nosotros</h3>
-    <h4>Dejanos tus datos y te responderemos lo antes posible</h4>
+    <p style="font-size: 40px; padding-left: 60px;">Contactáte con Nosotros</p>
+    <p style="font-size: 20px; padding-left: 25px;">Dejanos tus datos y te responderemos lo antes posible</p>
  <form action="" method="post" id="Contactos">
     <label for="field1"><span>Nombre <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" placeholder="Ej.: Juan"></label>
     <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" placeholder="Ej.: mail@mail.com"></label>
@@ -86,12 +104,12 @@
 </div>
 
 <!-- Pie de Pagina-->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-0" style="background-color:#292b2c; color: antiquewhite; position:absolute; width: 100%;">
-        <p class="col-md-0 mb-0 text-muted" style="text-align: center;">© 2022 Hangover & Asociados.
-        <a href="https://es-la.facebook.com/" target=_blank><img src="Iconos/FB.png" style="width: 35px; height: 35px; padding-left: 350px;"></a>
-            <a href="https://twitter.com/" target=_blank><img src="Iconos/Twt.png" style="width: 35px; height: 35px;"></a>
-            <a href="https://www.instagram.com/" target=_blank><img src="Iconos/Ig.png" style="width: 35px; height: 35px;"></a>
-            <a href="https://api.whatsapp.com/send?phone=5492325515273&text=Hola,%20me%20interesa%20contactarlos" target=_blank><img src="Iconos/Wp.png" style="width: 35px; height: 35px;"></a>
+    <footer>
+        <p>© 2022 Hangover & Asociados.
+        <a href="https://es-la.facebook.com/" target=_blank><img src="Iconos/FB.png" style="padding-left: 350px;"></a>
+            <a href="https://twitter.com/" target=_blank><img src="Iconos/Twt.png"></a>
+            <a href="https://www.instagram.com/" target=_blank><img src="Iconos/Ig.png"></a>
+            <a href="https://api.whatsapp.com/send?phone=5492325515273&text=Hola,%20me%20interesa%20contactarlos" target=_blank><img src="Iconos/Wp.png"></a>
         </p>
     </footer>
     
